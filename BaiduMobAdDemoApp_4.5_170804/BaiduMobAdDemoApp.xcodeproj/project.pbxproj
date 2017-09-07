@@ -10,6 +10,7 @@
 		8426ED691F60DB8500C52AAF /* UIViewController+Swizzled.m in Sources */ = {isa = PBXBuildFile; fileRef = 8426ED681F60DB8500C52AAF /* UIViewController+Swizzled.m */; };
 		8426ED6C1F60E2E600C52AAF /* Jietu20170907-101344.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8426ED6B1F60E2E600C52AAF /* Jietu20170907-101344.jpg */; };
 		8426ED6F1F60EB0600C52AAF /* Jietu20170907-104813.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8426ED6E1F60EB0600C52AAF /* Jietu20170907-104813.jpg */; };
+		8426ED711F60F72400C52AAF /* Jietu20170907-114013.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8426ED701F60F72400C52AAF /* Jietu20170907-114013.jpg */; };
 		AD3F466C1CE2E15E0094388E /* BaiduMobAdPrerollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD3F466B1CE2E15E0094388E /* BaiduMobAdPrerollViewController.m */; };
 		AD4C95271CA26AFB007BEB0F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AD4C95261CA26AFB007BEB0F /* main.m */; };
 		AD4C952A1CA26AFB007BEB0F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AD4C95291CA26AFB007BEB0F /* AppDelegate.m */; };
@@ -51,6 +52,7 @@
 		8426ED681F60DB8500C52AAF /* UIViewController+Swizzled.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+Swizzled.m"; path = "../../../UIViewController-Swizzled/UIViewController+Swizzled.m"; sourceTree = "<group>"; };
 		8426ED6B1F60E2E600C52AAF /* Jietu20170907-101344.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Jietu20170907-101344.jpg"; sourceTree = "<group>"; };
 		8426ED6E1F60EB0600C52AAF /* Jietu20170907-104813.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Jietu20170907-104813.jpg"; sourceTree = "<group>"; };
+		8426ED701F60F72400C52AAF /* Jietu20170907-114013.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Jietu20170907-114013.jpg"; sourceTree = "<group>"; };
 		AD3F466A1CE2E15E0094388E /* BaiduMobAdPrerollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaiduMobAdPrerollViewController.h; sourceTree = "<group>"; };
 		AD3F466B1CE2E15E0094388E /* BaiduMobAdPrerollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaiduMobAdPrerollViewController.m; sourceTree = "<group>"; };
 		AD4C95221CA26AFB007BEB0F /* BaiduMobAdDemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BaiduMobAdDemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -139,6 +141,7 @@
 		8426ED6D1F60E39800C52AAF /* 信息流 */ = {
 			isa = PBXGroup;
 			children = (
+				8426ED701F60F72400C52AAF /* Jietu20170907-114013.jpg */,
 				ADE26A311CFC3A260024E5E2 /* NativeTableViewController.h */,
 				ADE26A321CFC3A260024E5E2 /* NativeTableViewController.m */,
 			);
@@ -293,6 +296,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8426ED6F1F60EB0600C52AAF /* Jietu20170907-104813.jpg in Resources */,
+				8426ED711F60F72400C52AAF /* Jietu20170907-114013.jpg in Resources */,
 				AD4C95351CA26AFB007BEB0F /* LaunchScreen.storyboard in Resources */,
 				AD4C95321CA26AFB007BEB0F /* Assets.xcassets in Resources */,
 				BA42BD4C1DFF9D9E008DF03F /* CpuChannelViewController.xib in Resources */,
@@ -454,7 +458,7 @@
 					"-ObjC",
 					"-lstdc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.baidu.mobads.BaiduMobAdDemoApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bx.shuangshuang;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				VALID_ARCHS = "armv7 armv7s x86_64 i386 arm64";
@@ -485,7 +489,7 @@
 					"-ObjC",
 					"-lstdc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.baidu.mobads.BaiduMobAdDemoApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bx.shuangshuang;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				VALID_ARCHS = "armv7 armv7s x86_64 i386 arm64";

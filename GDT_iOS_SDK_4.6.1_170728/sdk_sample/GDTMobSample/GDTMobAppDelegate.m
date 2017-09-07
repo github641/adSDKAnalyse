@@ -5,6 +5,10 @@
 //  Created by GaoChao on 13-12-9.
 //  Copyright (c) 2013年 Tencent. All rights reserved.
 //
+/* lzy170907注:
+ 原始包名：
+ com.qq.gdt.GDTMobApp
+ */
 
 #import "GDTMobAppDelegate.h"
 #import "GDTTrack.h"
@@ -27,29 +31,29 @@
     [self.window makeKeyAndVisible];
     
     //开屏广告初始化并展示代码
-    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
-        GDTSplashAd *splashAd = [[GDTSplashAd alloc] initWithAppkey:@"1105344611" placementId:@"9040714184494018"];
-        splashAd.delegate = self;//设置代理1ez        //针对不同设备尺寸设置不同的默认图片，拉取广告等待时间会展示该默认图片。
-        if ([[UIScreen mainScreen] bounds].size.height >= 568.0f) {
-            splashAd.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"LaunchImage-568h"]];
-        } else {
-            splashAd.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"LaunchImage"]];
-        }
-        //设置开屏拉取时长限制，若超时则不再展示广告 
-        splashAd.fetchDelay = 3;
-        //［可选］拉取并展示全屏开屏广告
-        //[splashAd loadAdAndShowInWindow:self.window];
-        //设置开屏底部自定义LogoView，展示半屏开屏广告
-        _bottomView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, [[UIScreen mainScreen] bounds].size.width, 100)];
-        UIImageView *logo = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"SplashBottomLogo"]];
-        [_bottomView addSubview:logo];
-        logo.center = _bottomView.center;
-        _bottomView.backgroundColor = [UIColor whiteColor];
-
-        [splashAd loadAdAndShowInWindow:self.window withBottomView:_bottomView];
-        self.splash = splashAd;
-        
-    }
+//    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
+//        GDTSplashAd *splashAd = [[GDTSplashAd alloc] initWithAppkey:@"1105344611" placementId:@"9040714184494018"];
+//        splashAd.delegate = self;//设置代理1ez        //针对不同设备尺寸设置不同的默认图片，拉取广告等待时间会展示该默认图片。
+//        if ([[UIScreen mainScreen] bounds].size.height >= 568.0f) {
+//            splashAd.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"LaunchImage-568h"]];
+//        } else {
+//            splashAd.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"LaunchImage"]];
+//        }
+//        //设置开屏拉取时长限制，若超时则不再展示广告 
+//        splashAd.fetchDelay = 3;
+//        //［可选］拉取并展示全屏开屏广告
+//        //[splashAd loadAdAndShowInWindow:self.window];
+//        //设置开屏底部自定义LogoView，展示半屏开屏广告
+//        _bottomView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, [[UIScreen mainScreen] bounds].size.width, 100)];
+//        UIImageView *logo = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"SplashBottomLogo"]];
+//        [_bottomView addSubview:logo];
+//        logo.center = _bottomView.center;
+//        _bottomView.backgroundColor = [UIColor whiteColor];
+//
+//        [splashAd loadAdAndShowInWindow:self.window withBottomView:_bottomView];
+//        self.splash = splashAd;
+//        
+//    }
     return YES;
 }
 

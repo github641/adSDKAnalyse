@@ -59,11 +59,11 @@
 - (void)startAdViewWithHeightScale:(CGFloat)scale
                          adUnitTag:(NSString *)adUnitTag {
     /* lzy170907注:这是新变化
-     size                               scale  宽比高
-     #define kBannerSize_20_3 @"3722589" 0.15  320 * 48
-     #define kBannerSize_3_2 @"3722694" 0.66   320 * 211.2
-     #define kBannerSize_7_3 @"3722704" 0.43   320 * 137.6
-     #define kBannerSize_2_1 @"3722709" 0.5    320 * 160
+     size                               scale（高/宽）   宽比高
+     #define kBannerSize_20_3 @"3722589" 0.15           320 * 48
+     #define kBannerSize_3_2 @"3722694" 0.66            320 * 211.2
+     #define kBannerSize_7_3 @"3722704" 0.43            320 * 137.6
+     #define kBannerSize_2_1 @"3722709" 0.5             320 * 160
      */
     
     //lp颜色配置

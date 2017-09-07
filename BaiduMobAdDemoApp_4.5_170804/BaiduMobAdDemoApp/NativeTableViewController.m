@@ -21,7 +21,9 @@
 #import "BaiduMobAdSDK/BaiduMobAdNativeVideoView.h"
 #import "BaiduMobAdSDK/BaiduMobAdNativeWebView.h"
 
-
+#define ww 300
+#define hh 300
+//#define ss 1.2
 
 #define WIDTH self.view.frame.size.width
 #define HEIGHT self.view.frame.size.height
@@ -136,7 +138,8 @@
 #warning - 上线前请换为自己的id
 -(NSString*)publisherId
 {
-    return self.toBeChangedPublisherId;
+//    return self.toBeChangedPublisherId;
+    return @"fccbc018";
 }
 
 //创建后获得的信息流广告位id
@@ -159,7 +162,7 @@
      //            return @"4730494";
      
      // lzy170907注：6:5  y
-     //            return @"4730496";
+                 return @"4730496";
      
      // lzy170907注：7:5  y
      //            return @"4730498";
@@ -170,9 +173,16 @@
      // lzy170907注：12:5  n
      //            return @"4730501";
      
+     
+     以下做宽比高 尺寸 确认：
+     6:5 = 1.2
+     7:5 = 1.4
+     10:7 = 1.429
+     3:2 = 1.5
+     
      */
-    return self.toBeChangedApid; //普通信息流, 3条
-
+//    return self.toBeChangedApid; //普通信息流, 3条
+return @"4730496";
 }
 
 //广告返回成功
@@ -183,7 +193,13 @@
     
     for(int i = 0; i < [nativeAds count]; i++){
         BaiduMobAdNativeAdObject *object = [nativeAds objectAtIndex:i];
-        BaiduMobAdNativeAdView *view = [self createNativeAdViewWithframe:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 351) object:object];
+        
+        
+        CGRect adFrame = CGRectMake(0, 0, ww, hh);
+        
+//        NSLog(@"%s %@ scale:%f", __func__, NSStringFromCGRect(adFrame), ss);
+        
+        BaiduMobAdNativeAdView *view = [self createNativeAdViewWithframe:adFrame object:object];
         
         [self.adViewArray addObject:view];
         
@@ -330,7 +346,8 @@
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 360;
+    NSLog(@"%f", hh);
+    return hh;
 }
 
 -(UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -364,14 +381,14 @@
  * 大图高度，仅用于信息流模版广告
  */
 -(NSNumber*)baiduMobAdsHeight {
-    return [NSNumber numberWithFloat:180];
+    return [NSNumber numberWithFloat:hh];
 }
 
 /**
  * 大图宽度，仅用于信息流模版广告
  */
 -(NSNumber*)baiduMobAdsWidth {
-    return [NSNumber numberWithFloat:320];
+    return [NSNumber numberWithFloat:ww];
 }
 
 - (BOOL)enableLocation {

@@ -53,8 +53,108 @@
 
 - (IBAction)refreshButton:(id)sender {
     
-    self.nativeExpressAd = [[GDTNativeExpressAd alloc] initWithAppkey:@"1105344611" placementId:self.positionIDTextField.text adSize:CGSizeMake(300, 200)];
+//    CGFloat adViewW = kScreenWidth;
+//    CGFloat adViewH = kScreenWidth * scale;
+    // lzy170907注：以下几个是百度模板信息流的比例（有填充的）
+    // lzy170907注：3:2  y
+    //        return @"4730491";
+    
+    // lzy170907注：4:1  y
+    //            return @"4730493";
+
+    
+    // lzy170907注：6:5  y
+    //            return @"4730496";
+    
+    // lzy170907注：7:5  y
+    //            return @"4730498";
+    
+    // lzy170907注：10:7  y
+    //            return @"4730499";
+    
+    /* lzy170907注:
+     
+     后台配置3:2
+     实际加载的是3:1素材是
+     
+     1 搞清楚到底是高：宽
+     还是 宽：高
+     搞定，广点通后台的配置是 宽比高。
+     
+     2 广点通可用比例 宽比高
+     2:3 = 0.67
+     16:9 = 1.78
+     3:2 = 1.5
+     
+     3、百度可用比例 宽比高
+     3:2 = 1.5
+     4:1 = 4
+     6:5 = 1.2
+     7:5 = 1.4
+     10:7 = 1.429
+     
+     4 可能可以通用的比例
+     
+     gdt:
+     16:9 = 1.78
+     3:2 = 1.5
+     
+     baidu:
+     6:5 = 1.2
+     7:5 = 1.4
+     10:7 = 1.429
+     3:2 = 1.5
+     */
+
+    
+    /* lzy170907注:原始方法
+     self.nativeExpressAd = [[GDTNativeExpressAd alloc] initWithAppkey:@"1105344611" placementId:self.positionIDTextField.text adSize:CGSizeMake(300, 200)];
+     self.nativeExpressAd.delegate = self;
+     
+     */
+    /* lzy170907注:y
+     lzyTest-爽爽-纯图-8*12，宽比高
+     self.nativeExpressAd = [[GDTNativeExpressAd alloc] initWithAppkey:@"1105272441" placementId:@"5090824556769679" adSize:CGSizeMake(300, 200)];
+     self.nativeExpressAd.delegate = self;
+
+     */
+    /* lzy170907注:y
+     lzyTest-爽爽-纯图-128*72 16:9 宽比高
+     self.nativeExpressAd = [[GDTNativeExpressAd alloc] initWithAppkey:@"1105272441" placementId:@"2020823506661698" adSize:CGSizeMake(300, 200)];
+     self.nativeExpressAd.delegate = self;
+     */
+    /* lzy170907注:y
+     lzyTest-爽爽-双图双文-128*72 16:9
+     self.nativeExpressAd = [[GDTNativeExpressAd alloc] initWithAppkey:@"1105272441" placementId:@"9000127516669627" adSize:CGSizeMake(300, 200)];
+     self.nativeExpressAd.delegate = self;
+     */
+    /* lzy170907注:y
+     lzyTest-爽爽-左文右图-12*8 3:2 宽比高
+     self.nativeExpressAd = [[GDTNativeExpressAd alloc] initWithAppkey:@"1105272441" placementId:@"7070228576166686" adSize:CGSizeMake(300, 200)];
+     self.nativeExpressAd.delegate = self;
+     */
+    /* lzy170907注:y
+     lzyTest-爽爽-左图右文-12*8 3:2
+     self.nativeExpressAd = [[GDTNativeExpressAd alloc] initWithAppkey:@"1105272441" placementId:@"8080828566567615" adSize:CGSizeMake(300, 200)];
+     self.nativeExpressAd.delegate = self;
+     
+     */
+    
+    /* lzy170907注:y
+     lzyTest-爽爽-上文下图-128*72 16:9
+     self.nativeExpressAd = [[GDTNativeExpressAd alloc] initWithAppkey:@"1105272441" placementId:@"9040427516660654" adSize:CGSizeMake(300, 200)];
+     self.nativeExpressAd.delegate = self;
+     
+     */
+    /* lzy170907注:n
+     lzyTest-爽爽-上图下文-128*72
+     self.nativeExpressAd = [[GDTNativeExpressAd alloc] initWithAppkey:@"1105272441" placementId:@"4010620556265693" adSize:CGSizeMake(300, 200)];
+     self.nativeExpressAd.delegate = self;
+     */
+    self.nativeExpressAd = [[GDTNativeExpressAd alloc] initWithAppkey:@"1105272441" placementId:@"2020823506661698" adSize:CGSizeMake(200, 300)];
+    // lzy170907注：创建的时候的size对于原始模板广告无效，尺寸在回调中设定
     self.nativeExpressAd.delegate = self;
+
 
     // 拉取5条广告
     [self.nativeExpressAd loadAd:5];
@@ -81,6 +181,7 @@
  */
 - (void)nativeExpressAdSuccessToLoad:(GDTNativeExpressAd *)nativeExpressAd views:(NSArray<__kindof GDTNativeExpressAdView *> *)views
 {
+    NSLog(@"%s 原始模板广告%ld个", __func__, views.count);
     [self.expressAdViews enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         GDTNativeExpressAdView *adView = (GDTNativeExpressAdView *)obj;
         [adView removeFromSuperview];
@@ -98,7 +199,10 @@
         // 取一个GDTNativeExpressAdView
         GDTNativeExpressAdView *expressView =  [self.expressAdViews objectAtIndex:0];
         // 设置frame，开发者自己设置
-        expressView.frame = CGRectMake(0, 0, self.positionW.value, self.positionH.value);
+//        expressView.frame = CGRectMake(0, 0, 80, 120);
+//        expressView.frame = CGRectMake(0, 0, 160, 90);
+//        expressView.frame = CGRectMake(0, 0, 320, 213.33);
+        
         expressView.controller = rootViewController;
         
         [expressView render];
@@ -114,7 +218,8 @@
  * 拉取广告失败的回调
  */
 - (void)nativeExpressAdFailToLoad:(GDTNativeExpressAd *)nativeExpressAd error:(NSError *)error {
-   
+    NSLog(@"%s %@",__FUNCTION__, error);
+
 }
 /**
  * 拉取广告失败的回调

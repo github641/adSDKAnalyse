@@ -383,7 +383,7 @@
 					"$(PROJECT_DIR)/GDTMobSample/lib",
 				);
 				OTHER_LDFLAGS = "";
-				PRODUCT_BUNDLE_IDENTIFIER = com.qq.gdt.GDTMobApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bx.shuangshuang;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -415,7 +415,7 @@
 					"$(PROJECT_DIR)/GDTMobSample/lib",
 				);
 				OTHER_LDFLAGS = "";
-				PRODUCT_BUNDLE_IDENTIFIER = com.qq.gdt.GDTMobApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bx.shuangshuang;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";

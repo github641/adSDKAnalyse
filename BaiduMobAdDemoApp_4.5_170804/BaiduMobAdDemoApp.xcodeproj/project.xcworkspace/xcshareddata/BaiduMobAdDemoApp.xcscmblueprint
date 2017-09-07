@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "7362E82AD63F41C4A72F0E5C19B529E52BD088F0",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "EA5B76C9B414336336BE77A593D4C84BC8C9B88C" : 9223372036854775807,
+    "7362E82AD63F41C4A72F0E5C19B529E52BD088F0" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "21D08054-4518-48AB-B813-01D66F90D443",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "EA5B76C9B414336336BE77A593D4C84BC8C9B88C" : "UIViewController-Swizzled\/",
+    "7362E82AD63F41C4A72F0E5C19B529E52BD088F0" : "adSDKAnalyse\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "BaiduMobAdDemoApp",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "BaiduMobAdDemoApp_4.5_170804\/BaiduMobAdDemoApp.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/github641\/adSDKAnalyse.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "7362E82AD63F41C4A72F0E5C19B529E52BD088F0"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/RuiAAPeres\/UIViewController-Swizzled",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "EA5B76C9B414336336BE77A593D4C84BC8C9B88C"
+    }
+  ]
+}
