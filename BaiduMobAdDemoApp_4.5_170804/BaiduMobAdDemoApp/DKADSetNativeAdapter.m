@@ -12,12 +12,7 @@
 
 @implementation DKADSetNativeAdapter
 
-
-
-- (void)configure{
-    
-    
-}
+- (void)configure{}
 
 - (void)load{
     
@@ -34,20 +29,11 @@
 
 
 
-- (void)DKADSetNativeAdapterShowAdWithView:(UIView *)view{
-    
-    
-}
+- (void)DKADSetNativeAdapterShowAdWithView:(UIView *)view{}
 
 //点击广告
--(void)DKADSetNativeAdapterClickAdWithModel:(DKADSetNativeDataModel *)dataModel{
-    
-    
-}
+-(void)DKADSetNativeAdapterClickAdWithModel:(DKADSetNativeDataModel *)dataModel{}
 
--(void)dealloc{
-    
-}
 
 #pragma mark - baidu mobAd native Delegate
 
@@ -56,7 +42,6 @@
  */
 -(NSString*)publisherId
 {
-    //    return self.pid;
     return @"fccbc018";
 }
 
@@ -65,7 +50,6 @@
  */
 -(NSString*)apId
 {
-    //    return self.sid;
     return @"4730491";
     
 }
@@ -111,26 +95,17 @@
                                     }];
         
         if (view) {
-            
-            
             [viewListArray addObject:view];
-        }else{
-            NSLog(@"返回数据 不是BaiduMobAdNativeAdObject，点开后台id绑定错误");
         }
         
         
-        
     }
     
-    if (viewListArray.count == 0) {
-        [self.nativeAdapterDelegate DKADSetNativeAdapterRequestAdFail:@"适配出错，数组为空"];
-    }else{
-        //        NSLog(@"viewListArray.count:%ld", viewListArray.count);
+    #pragma mark - ================== 在这里回调给 NativeTempleteExampleViewController02 类使用 ==================
+    if (viewListArray.count != 0) {
         [self.nativeAdapterDelegate DKADSetNativeAdapterRequestSuccessWithViewList:viewListArray];
     }
-    
-    
-    
+   
 }
 
 

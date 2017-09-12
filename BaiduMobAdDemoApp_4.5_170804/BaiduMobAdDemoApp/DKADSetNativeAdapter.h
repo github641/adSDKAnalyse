@@ -16,28 +16,16 @@
 #import "BaiduMobAdSDK/BaiduMobAdNativeWebView.h"
 
 @protocol DKADSetNativeAdapterDelegate <NSObject>
-
 @optional
-
-- (void)DKADSetNativeAdapterRequestAdFail:(id)error;
-
-
 - (void)DKADSetNativeAdapterRequestSuccessWithViewList:(NSArray *)nativeViewList;
-
-
-- (void)DKADSetNativeAdapterClicked;
-
-
 @end
 
 
 @class DKADSetNativeDataModel;
 
-
 @interface DKADSetNativeAdapter : NSObject<BaiduMobAdNativeAdDelegate>
 
 @property(nonatomic,retain)BaiduMobAdNative *native;
-
 
 @property (nonatomic, weak)id<DKADSetNativeAdapterDelegate> nativeAdapterDelegate;
 
@@ -54,11 +42,4 @@
  */
 - (void)load;
 
-
-
-//展示广告
--(void)DKADSetNativeAdapterShowAdWithView:(UIView *)view;
-
-//点击广告
--(void)DKADSetNativeAdapterClickAdWithModel:(DKADSetNativeDataModel *)dataModel;
 @end

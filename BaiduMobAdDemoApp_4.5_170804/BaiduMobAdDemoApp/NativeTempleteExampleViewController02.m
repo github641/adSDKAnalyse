@@ -9,9 +9,6 @@
 #import "NativeTempleteExampleViewController02.h"
 
 
-#define ww 300
-#define hh 200
-
 #define WIDTH [UIScreen mainScreen].bounds.size.width
 #define HEIGHT [UIScreen mainScreen].bounds.size.height
 
@@ -55,9 +52,7 @@
  
     self.native.currentVC = self;
 
-    
-    self.native.nativeFrame = CGRectMake(0, 0, WIDTH, HEIGHT / 1.5);
-    
+    self.native.nativeFrame = CGRectMake(0, 0, WIDTH, WIDTH / 1.5);
     
     [self.native configure];
     [self.native load];
@@ -80,7 +75,7 @@
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     
-    return hh;
+    return WIDTH / 1.5;
 }
 
 -(UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -106,6 +101,7 @@
     [_adViewArray removeAllObjects];
     _adViewArray = nil;
 }
+
 
 #pragma mark - native adapter Delegate
 
