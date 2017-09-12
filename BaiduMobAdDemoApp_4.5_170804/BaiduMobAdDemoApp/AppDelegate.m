@@ -24,7 +24,7 @@
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    SWIZZ_IT
+    
     
     MainTableViewController *mainController  = [[[MainTableViewController alloc]init]autorelease];
     UINavigationController *naviController = [[[UINavigationController alloc]initWithRootViewController:mainController]autorelease];

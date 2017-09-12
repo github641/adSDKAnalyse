@@ -7,10 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8426ED691F60DB8500C52AAF /* UIViewController+Swizzled.m in Sources */ = {isa = PBXBuildFile; fileRef = 8426ED681F60DB8500C52AAF /* UIViewController+Swizzled.m */; };
-		8426ED6C1F60E2E600C52AAF /* Jietu20170907-101344.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8426ED6B1F60E2E600C52AAF /* Jietu20170907-101344.jpg */; };
-		8426ED6F1F60EB0600C52AAF /* Jietu20170907-104813.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8426ED6E1F60EB0600C52AAF /* Jietu20170907-104813.jpg */; };
-		8426ED711F60F72400C52AAF /* Jietu20170907-114013.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8426ED701F60F72400C52AAF /* Jietu20170907-114013.jpg */; };
 		843477C41F67757000EFD477 /* NativeTempleteExampleViewController02.m in Sources */ = {isa = PBXBuildFile; fileRef = 843477C31F67757000EFD477 /* NativeTempleteExampleViewController02.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		843477CA1F67765F00EFD477 /* DKADSetNativeAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 843477C91F67765F00EFD477 /* DKADSetNativeAdapter.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		AD3F466C1CE2E15E0094388E /* BaiduMobAdPrerollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD3F466B1CE2E15E0094388E /* BaiduMobAdPrerollViewController.m */; };
@@ -49,12 +45,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		8426ED661F60DA5500C52AAF /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
-		8426ED671F60DB8500C52AAF /* UIViewController+Swizzled.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIViewController+Swizzled.h"; path = "../../../UIViewController-Swizzled/UIViewController+Swizzled.h"; sourceTree = "<group>"; };
-		8426ED681F60DB8500C52AAF /* UIViewController+Swizzled.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+Swizzled.m"; path = "../../../UIViewController-Swizzled/UIViewController+Swizzled.m"; sourceTree = "<group>"; };
-		8426ED6B1F60E2E600C52AAF /* Jietu20170907-101344.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Jietu20170907-101344.jpg"; sourceTree = "<group>"; };
-		8426ED6E1F60EB0600C52AAF /* Jietu20170907-104813.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Jietu20170907-104813.jpg"; sourceTree = "<group>"; };
-		8426ED701F60F72400C52AAF /* Jietu20170907-114013.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Jietu20170907-114013.jpg"; sourceTree = "<group>"; };
 		843477C21F67757000EFD477 /* NativeTempleteExampleViewController02.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NativeTempleteExampleViewController02.h; sourceTree = "<group>"; };
 		843477C31F67757000EFD477 /* NativeTempleteExampleViewController02.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NativeTempleteExampleViewController02.m; sourceTree = "<group>"; };
 		843477C81F67765F00EFD477 /* DKADSetNativeAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DKADSetNativeAdapter.h; sourceTree = "<group>"; };
@@ -136,8 +126,6 @@
 		8426ED6A1F60E04200C52AAF /* 横幅 */ = {
 			isa = PBXGroup;
 			children = (
-				8426ED6B1F60E2E600C52AAF /* Jietu20170907-101344.jpg */,
-				8426ED6E1F60EB0600C52AAF /* Jietu20170907-104813.jpg */,
 				ADA3CC5B1CA909C2009CE580 /* BaiduMobAdFirstViewController.h */,
 				ADA3CC5C1CA909C2009CE580 /* BaiduMobAdFirstViewController.m */,
 			);
@@ -147,9 +135,12 @@
 		8426ED6D1F60E39800C52AAF /* 信息流 */ = {
 			isa = PBXGroup;
 			children = (
-				8426ED701F60F72400C52AAF /* Jietu20170907-114013.jpg */,
 				ADE26A311CFC3A260024E5E2 /* NativeTableViewController.h */,
 				ADE26A321CFC3A260024E5E2 /* NativeTableViewController.m */,
+				843477C21F67757000EFD477 /* NativeTempleteExampleViewController02.h */,
+				843477C31F67757000EFD477 /* NativeTempleteExampleViewController02.m */,
+				843477C81F67765F00EFD477 /* DKADSetNativeAdapter.h */,
+				843477C91F67765F00EFD477 /* DKADSetNativeAdapter.m */,
 			);
 			name = "信息流";
 			sourceTree = "<group>";
@@ -197,10 +188,6 @@
 				AD4C95291CA26AFB007BEB0F /* AppDelegate.m */,
 				ADA3CC5D1CA909C2009CE580 /* MainTableViewController.h */,
 				ADA3CC5E1CA909C2009CE580 /* MainTableViewController.m */,
-				843477C21F67757000EFD477 /* NativeTempleteExampleViewController02.h */,
-				843477C31F67757000EFD477 /* NativeTempleteExampleViewController02.m */,
-				843477C81F67765F00EFD477 /* DKADSetNativeAdapter.h */,
-				843477C91F67765F00EFD477 /* DKADSetNativeAdapter.m */,
 				AD4C952E1CA26AFB007BEB0F /* Main.storyboard */,
 				AD4C95311CA26AFB007BEB0F /* Assets.xcassets */,
 				AD4C95331CA26AFB007BEB0F /* LaunchScreen.storyboard */,
@@ -228,9 +215,6 @@
 				ADA3CC631CA90C74009CE580 /* AVFoundation.framework */,
 				ADA3CC611CA90AB2009CE580 /* CoreGraphics.framework */,
 				AD4C95261CA26AFB007BEB0F /* main.m */,
-				8426ED661F60DA5500C52AAF /* PrefixHeader.pch */,
-				8426ED671F60DB8500C52AAF /* UIViewController+Swizzled.h */,
-				8426ED681F60DB8500C52AAF /* UIViewController+Swizzled.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -305,13 +289,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8426ED6F1F60EB0600C52AAF /* Jietu20170907-104813.jpg in Resources */,
-				8426ED711F60F72400C52AAF /* Jietu20170907-114013.jpg in Resources */,
 				AD4C95351CA26AFB007BEB0F /* LaunchScreen.storyboard in Resources */,
 				AD4C95321CA26AFB007BEB0F /* Assets.xcassets in Resources */,
 				BA42BD4C1DFF9D9E008DF03F /* CpuChannelViewController.xib in Resources */,
 				AD4D69F01CF2F66500FB56E5 /* baidumobadsdk.bundle in Resources */,
-				8426ED6C1F60E2E600C52AAF /* Jietu20170907-101344.jpg in Resources */,
 				AD4C95301CA26AFB007BEB0F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -337,7 +318,6 @@
 				ADA3CC601CA909C2009CE580 /* MainTableViewController.m in Sources */,
 				BA571EBE1D055FBA00DCDC5D /* BaiduMobAdNormalInterstitialViewController.m in Sources */,
 				AD4C95271CA26AFB007BEB0F /* main.m in Sources */,
-				8426ED691F60DB8500C52AAF /* UIViewController+Swizzled.m in Sources */,
 				ADE26A371CFC52690024E5E2 /* BaiduMobAdNativeVideoView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -458,8 +438,8 @@
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/Frameworks",
 				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "$(SRCROOT)/BaiduMobAdDemoApp/PrefixHeader.pch";
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
 				GCC_VERSION = "";
 				INFOPLIST_FILE = BaiduMobAdDemoApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -470,7 +450,7 @@
 					"-ObjC",
 					"-lstdc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.bx.shuangshuang;
+				PRODUCT_BUNDLE_IDENTIFIER = com.baidu.mobads.BaiduMobAdDemoApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				VALID_ARCHS = "armv7 armv7s x86_64 i386 arm64";
@@ -489,8 +469,8 @@
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/Frameworks",
 				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "$(SRCROOT)/BaiduMobAdDemoApp/PrefixHeader.pch";
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
 				GCC_VERSION = "";
 				INFOPLIST_FILE = BaiduMobAdDemoApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -501,7 +481,7 @@
 					"-ObjC",
 					"-lstdc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.bx.shuangshuang;
+				PRODUCT_BUNDLE_IDENTIFIER = com.baidu.mobads.BaiduMobAdDemoApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				VALID_ARCHS = "armv7 armv7s x86_64 i386 arm64";
