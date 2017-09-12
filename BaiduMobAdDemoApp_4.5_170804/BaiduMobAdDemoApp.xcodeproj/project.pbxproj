@@ -11,6 +11,8 @@
 		8426ED6C1F60E2E600C52AAF /* Jietu20170907-101344.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8426ED6B1F60E2E600C52AAF /* Jietu20170907-101344.jpg */; };
 		8426ED6F1F60EB0600C52AAF /* Jietu20170907-104813.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8426ED6E1F60EB0600C52AAF /* Jietu20170907-104813.jpg */; };
 		8426ED711F60F72400C52AAF /* Jietu20170907-114013.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8426ED701F60F72400C52AAF /* Jietu20170907-114013.jpg */; };
+		843477C41F67757000EFD477 /* NativeTempleteExampleViewController02.m in Sources */ = {isa = PBXBuildFile; fileRef = 843477C31F67757000EFD477 /* NativeTempleteExampleViewController02.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		843477CA1F67765F00EFD477 /* DKADSetNativeAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 843477C91F67765F00EFD477 /* DKADSetNativeAdapter.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		AD3F466C1CE2E15E0094388E /* BaiduMobAdPrerollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD3F466B1CE2E15E0094388E /* BaiduMobAdPrerollViewController.m */; };
 		AD4C95271CA26AFB007BEB0F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AD4C95261CA26AFB007BEB0F /* main.m */; };
 		AD4C952A1CA26AFB007BEB0F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AD4C95291CA26AFB007BEB0F /* AppDelegate.m */; };
@@ -53,6 +55,10 @@
 		8426ED6B1F60E2E600C52AAF /* Jietu20170907-101344.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Jietu20170907-101344.jpg"; sourceTree = "<group>"; };
 		8426ED6E1F60EB0600C52AAF /* Jietu20170907-104813.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Jietu20170907-104813.jpg"; sourceTree = "<group>"; };
 		8426ED701F60F72400C52AAF /* Jietu20170907-114013.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Jietu20170907-114013.jpg"; sourceTree = "<group>"; };
+		843477C21F67757000EFD477 /* NativeTempleteExampleViewController02.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NativeTempleteExampleViewController02.h; sourceTree = "<group>"; };
+		843477C31F67757000EFD477 /* NativeTempleteExampleViewController02.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NativeTempleteExampleViewController02.m; sourceTree = "<group>"; };
+		843477C81F67765F00EFD477 /* DKADSetNativeAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DKADSetNativeAdapter.h; sourceTree = "<group>"; };
+		843477C91F67765F00EFD477 /* DKADSetNativeAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DKADSetNativeAdapter.m; sourceTree = "<group>"; };
 		AD3F466A1CE2E15E0094388E /* BaiduMobAdPrerollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaiduMobAdPrerollViewController.h; sourceTree = "<group>"; };
 		AD3F466B1CE2E15E0094388E /* BaiduMobAdPrerollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaiduMobAdPrerollViewController.m; sourceTree = "<group>"; };
 		AD4C95221CA26AFB007BEB0F /* BaiduMobAdDemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BaiduMobAdDemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -191,6 +197,10 @@
 				AD4C95291CA26AFB007BEB0F /* AppDelegate.m */,
 				ADA3CC5D1CA909C2009CE580 /* MainTableViewController.h */,
 				ADA3CC5E1CA909C2009CE580 /* MainTableViewController.m */,
+				843477C21F67757000EFD477 /* NativeTempleteExampleViewController02.h */,
+				843477C31F67757000EFD477 /* NativeTempleteExampleViewController02.m */,
+				843477C81F67765F00EFD477 /* DKADSetNativeAdapter.h */,
+				843477C91F67765F00EFD477 /* DKADSetNativeAdapter.m */,
 				AD4C952E1CA26AFB007BEB0F /* Main.storyboard */,
 				AD4C95311CA26AFB007BEB0F /* Assets.xcassets */,
 				AD4C95331CA26AFB007BEB0F /* LaunchScreen.storyboard */,
@@ -318,9 +328,11 @@
 				ADE26A361CFC52690024E5E2 /* BaiduMobAdNativeVideoBaseView.m in Sources */,
 				ADA3CC5F1CA909C2009CE580 /* BaiduMobAdFirstViewController.m in Sources */,
 				BA42BD4B1DFF9D9E008DF03F /* CpuChannelViewController.m in Sources */,
+				843477C41F67757000EFD477 /* NativeTempleteExampleViewController02.m in Sources */,
 				AD4C952A1CA26AFB007BEB0F /* AppDelegate.m in Sources */,
 				ADE26A331CFC3A260024E5E2 /* NativeTableViewController.m in Sources */,
 				ADE125F61DE2E52100972400 /* BaiduMobAdPrerollNativeViewController.m in Sources */,
+				843477CA1F67765F00EFD477 /* DKADSetNativeAdapter.m in Sources */,
 				BA571EB91D0510AE00DCDC5D /* NativeLoopViewController.m in Sources */,
 				ADA3CC601CA909C2009CE580 /* MainTableViewController.m in Sources */,
 				BA571EBE1D055FBA00DCDC5D /* BaiduMobAdNormalInterstitialViewController.m in Sources */,

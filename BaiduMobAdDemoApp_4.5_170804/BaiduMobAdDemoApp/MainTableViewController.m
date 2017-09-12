@@ -16,6 +16,8 @@
 #import "CpuChannelViewController.h"
 #import "BaiduMobAdPrerollNativeViewController.h"
 
+#import "NativeTempleteExampleViewController02.h"
+
 @interface MainTableViewController ()
 
 @end
@@ -34,7 +36,7 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 11;
+    return 12;
 }
 
 
@@ -75,6 +77,9 @@
         case 10:
             cell.textLabel.text = @"横幅广告2:1";
             break;
+            
+            case 11:
+            cell.textLabel.text = @"信息流-点开接入";
         default:
             break;
     }
@@ -124,6 +129,10 @@
         case 10:
             detailViewController = [[[BaiduMobAdFirstViewController alloc]init]autorelease];
             [((BaiduMobAdFirstViewController *)detailViewController) startAdViewWithHeightScale:0.50 adUnitTag:kBannerSize_2_1];
+            break;
+            
+        case 11:
+            detailViewController = [[[NativeTempleteExampleViewController02 alloc]init]autorelease];
             break;
         default:
             break;

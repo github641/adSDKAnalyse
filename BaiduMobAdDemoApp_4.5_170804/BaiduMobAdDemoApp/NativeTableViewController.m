@@ -22,7 +22,7 @@
 #import "BaiduMobAdSDK/BaiduMobAdNativeWebView.h"
 
 #define ww 300
-#define hh 300
+#define hh 200
 //#define ss 1.2
 
 #define WIDTH self.view.frame.size.width
@@ -182,7 +182,7 @@
      
      */
 //    return self.toBeChangedApid; //普通信息流, 3条
-return @"4730496";
+return @"4730491";
 }
 
 //广告返回成功
